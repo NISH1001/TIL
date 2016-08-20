@@ -4,7 +4,7 @@ A minimal repo for my #TIL stuffs related to programming, technology and anythin
 ## August 19, 2016
 1. In vim, `ctrl-i` or `ctrl-o` jumps to previously/next visited locations.  
 
-2. In vim, pressing `gx` over the line with url in vim to opens the url in browser.
+2. In vim, pressing `gx` over the line with url opens the url in browser.
 
 -------------------
 -------------------
