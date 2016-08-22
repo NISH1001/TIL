@@ -31,3 +31,11 @@ print(me.name)
 
 -------------------
 -------------------
+
+## August 22, 2016
+1. **VIM**: Append text to the end of multiple selected lines:
+- Goto **Visual Block** mode using `ctrl-v`
+- Jump to end of line using standard `$` symbol
+- Press **A**. Then type in your text
+- `Esc`
+- The same text will be appended to each of the selected lines
