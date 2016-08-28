@@ -40,3 +40,9 @@ print(me.name)
 - Press **A**. Then type in your text
 - `Esc`
 - The same text will be appended to each of the selected lines
+
+-------------------
+-------------------
+
+## August 28, 2016
+1. **VIM** : Use `*` to search the word under the cursor
