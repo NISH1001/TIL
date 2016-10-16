@@ -46,3 +46,21 @@ print(me.name)
 
 ## August 28, 2016
 1. **VIM** : Use `*` to search the word under the cursor
+
+-------------------
+-------------------
+
+## October 16, 2016
+1. **Python** : python dictionaries and lists can be recursive  
+    i.e. they can contain themselves:
+
+```python
+x = {}
+x['x'] = x
+print(x)
+
+# output :  {'x': {...}}
+```
+
+Same can be for lists too.
+> I don't see any practical use case for this though
