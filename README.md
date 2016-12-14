@@ -64,3 +64,11 @@ print(x)
 
 Same can be for lists too.
 > I don't see any practical use case for this though
+
+-------------------
+-------------------
+
+
+## December 14, 2016
+
+1. **VIM** : user `g` followed by `Ctrl-g` in **Visual Mode**  to get the information about selected lines.
