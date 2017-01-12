@@ -72,3 +72,11 @@ Same can be for lists too.
 ## December 14, 2016
 
 1. **VIM** : user `g` followed by `Ctrl-g` in **Visual Mode**  to get the information about selected lines.
+
+
+------------
+-----------
+
+## January 12, 2017
+
+1. **GIT** : use `git reset --hard HEAD~1` to remove unpushed local commit
