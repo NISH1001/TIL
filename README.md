@@ -95,7 +95,7 @@ Same can be for lists too.
 **constructor over population**
 
 ```java
-pulic class Burger {
+public class Burger {
     private int size;
 
     private boolean cheese = false;
@@ -123,7 +123,7 @@ are there in the arguments.
 **builder pattern**
 
 ```java
-class Burger {
+public class Burger {
     private size;
 
     private boolean cheese = false;
@@ -140,7 +140,7 @@ class Burger {
     }
 }
 
-class BurgerBuilder {
+public class BurgerBuilder {
     public size;
 
     public cheese = false;
