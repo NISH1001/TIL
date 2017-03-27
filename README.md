@@ -80,3 +80,120 @@ Same can be for lists too.
 ## January 12, 2017
 
 1. **GIT** : use `git reset --hard HEAD~1` to remove unpushed local commit
+
+------------
+-----------
+
+## March 27, 2017
+
+1. **Builder Design Patterns**  
+- use builder design pattern when the constructor is very much populated by arguments.
+- it becomes tedious for creating new instances of a class if constructor is accepting so much arguments.
+
+#### example
+
+** constructor over population **
+
+```java
+pulic class Burger {
+    private int size;
+
+    private boolean cheese = false;
+    private boolean tomato = false;
+    private boolean lettuce = false;
+    private boolean pepperoni = false;
+
+    public Burger(int size, boolean cheese, boolean tomato, boolean lettuce, boolean pepperoni) {
+        this.size = size;
+        this.cheese = cheese;
+        this.tomato = tomato;
+        this.lettuce = lettuce;
+        this.pepperoni = pepperoni;
+    }
+}
+
+Burger burger = new Burger(14, true, true false, false);
+```
+
+As it can be seen, as the number of items to be added to the burger grows, we have to increase the number of arguments in the constructor
+too.  
+This is a very bad design practice because it becomes difficult to remember the order of arguments as well as what type of arguments
+are there in the arguments.
+
+** builder patter **
+
+```java
+class Burger
+{
+    private size;
+
+    private boolean cheese = false;
+    private boolean pepperoni = false;
+    private boolean lettuce = false;
+    private boolean tomato = false;
+
+    public Burger(BurgerBuilder builder)
+    {
+        this.size = builder.size();
+        this.cheese = builder.cheese();
+        this.pepperoni = builder.pepperoni();
+        this.lettuce = builder.lettuce();
+        this.tomato = builder.tomato();
+    }
+}
+
+class BurgerBuilder
+{
+    public size;
+
+    public cheese = false;
+    public pepperoni = false;
+    public lettuce = false;
+    public tomato = false;
+
+    public BurgerBuilder(int size)
+    {
+        this.size = size;
+    }
+
+    public addPepperoni()
+    {
+        this.pepperoni = true;
+        return this;
+    }
+
+    public addLettuce()
+    {
+        this.lettuce = true;
+        return this;
+    }
+
+    public addCheese()
+    {
+        this.cheese = true;
+        return this;
+    }
+
+    public addTomato()
+    {
+        this.tomato = true;
+        return this;
+    }
+
+    public Burger build()
+    {
+        return new Burger(this);
+    }
+}
+
+
+Burger burger = (new BurgerBuilder(14))
+                    ->addPepperoni()
+                    ->addLettuce()
+                    ->addTomato()
+                    ->build();
+
+```
+
+In the `BurgerBuilder` class, all the `add` method returns the builder type so that we can form the chain for subsequent addition.  
+Finally, `build` method returns the Burger which is what we want.
