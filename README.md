@@ -123,8 +123,7 @@ are there in the arguments.
 ** builder patter **
 
 ```java
-class Burger
-{
+class Burger {
     private size;
 
     private boolean cheese = false;
@@ -132,8 +131,7 @@ class Burger
     private boolean lettuce = false;
     private boolean tomato = false;
 
-    public Burger(BurgerBuilder builder)
-    {
+    public Burger(BurgerBuilder builder) {
         this.size = builder.size();
         this.cheese = builder.cheese();
         this.pepperoni = builder.pepperoni();
@@ -142,8 +140,7 @@ class Burger
     }
 }
 
-class BurgerBuilder
-{
+class BurgerBuilder {
     public size;
 
     public cheese = false;
@@ -151,47 +148,41 @@ class BurgerBuilder
     public lettuce = false;
     public tomato = false;
 
-    public BurgerBuilder(int size)
-    {
+    public BurgerBuilder(int size) {
         this.size = size;
     }
 
-    public addPepperoni()
-    {
+    public BurgerBuilder addPepperoni() {
         this.pepperoni = true;
         return this;
     }
 
-    public addLettuce()
-    {
+    public BurgerBuilder addLettuce() {
         this.lettuce = true;
         return this;
     }
 
-    public addCheese()
-    {
+    public BurgerBuilder addCheese() {
         this.cheese = true;
         return this;
     }
 
-    public addTomato()
-    {
+    public BurgerBuilder addTomato() {
         this.tomato = true;
         return this;
     }
 
-    public Burger build()
-    {
+    public Burger build() {
         return new Burger(this);
     }
 }
 
 
 Burger burger = (new BurgerBuilder(14))
-                    ->addPepperoni()
-                    ->addLettuce()
-                    ->addTomato()
-                    ->build();
+                    .addPepperoni()
+                    .addLettuce()
+                    .addTomato()
+                    .build();
 
 ```
 
