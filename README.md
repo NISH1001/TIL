@@ -86,13 +86,13 @@ Same can be for lists too.
 
 ## March 27, 2017
 
-1. **Builder Design Patterns**  
+### 1. Builder Design Patterns
 - use builder design pattern when the constructor is very much populated by arguments.
 - it becomes tedious for creating new instances of a class if constructor is accepting so much arguments.
 
 #### example
 
-** constructor over population **
+**constructor over population**
 
 ```java
 pulic class Burger {
@@ -120,7 +120,7 @@ too.
 This is a very bad design practice because it becomes difficult to remember the order of arguments as well as what type of arguments
 are there in the arguments.
 
-** builder patter **
+**builder pattern**
 
 ```java
 class Burger {
