@@ -132,21 +132,21 @@ public class Burger {
     private boolean tomato = false;
 
     public Burger(BurgerBuilder builder) {
-        this.size = builder.size();
-        this.cheese = builder.cheese();
-        this.pepperoni = builder.pepperoni();
-        this.lettuce = builder.lettuce();
-        this.tomato = builder.tomato();
+        this.size = builder.size;
+        this.cheese = builder.cheese;
+        this.pepperoni = builder.pepperoni;
+        this.lettuce = builder.lettuce;
+        this.tomato = builder.tomato;
     }
 }
 
 public class BurgerBuilder {
     public size;
 
-    public cheese = false;
-    public pepperoni = false;
-    public lettuce = false;
-    public tomato = false;
+    public boolean cheese = false;
+    public boolean pepperoni = false;
+    public boolean lettuce = false;
+    public boolean tomato = false;
 
     public BurgerBuilder(int size) {
         this.size = size;
