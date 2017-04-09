@@ -188,3 +188,28 @@ Burger burger = (new BurgerBuilder(14))
 
 In the `BurgerBuilder` class, all the `add` method returns the builder type so that we can form the chain for subsequent addition.  
 Finally, `build` method returns the Burger which is what we want.
+
+------------
+-----------
+
+## April 09, 2017
+
+### 1. Partial Function
+Partial function from **X** to **Y** is that function in which elements of subset of **X** maps to unique elements of **Y**.  
+That is:
+**Xs** = subset of X  
+Then, partial function from **X** to **Y** is a function from **Xs** to **Y**.  
+
+If **Xs** = **X**, it is a *total function*.
+
+#### example
+```python
+X = [1, 2, 3]
+Y = [a, b, c, d]
+Xs = [2, 3]
+```
+
+![](http://i.imgur.com/R0Lh7rS.jpg)
+
+------------
+-----------
