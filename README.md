@@ -209,7 +209,20 @@ Y = [a, b, c, d]
 Xs = [2, 3]
 ```
 
-![](http://i.imgur.com/R0Lh7rS.jpg)
+![partial function](http://i.imgur.com/R0Lh7rS.jpg)
+
+------------
+-----------
+
+## April 10, 2017
+
+### 1. Get auido file directly from youtube-dl
+```bash
+youtube-dl -g https://www.youtube.com/watch?v=-qfCrYwdqCA
+```
+
+The output consists of two url. The first url consists of isolated video. The second consists of isolated audio.  
+So, open the audio link and just download the audio file.
 
 ------------
 -----------
