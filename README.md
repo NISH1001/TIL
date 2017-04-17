@@ -226,3 +226,32 @@ So, open the audio link and just download the audio file.
 
 ------------
 -----------
+
+## April 17, 2017
+
+### 1. Enforce the singleton property with a private constructor or an enum type
+A single-element enum type is the best way to implement a singleton.
+
+```java
+public enum MySingleton{
+    INSTANCE;
+}
+```
+
+By default, it has implicit constructor. So, it can be written as:
+```java
+public enum MySingleton{
+    INSTANCE;
+    private MySingleton(){
+        System.out.println("Inside MySingleton constructor");
+    }
+}
+```
+
+So, whenever the enum instance is created here, the same object is reused.
+
+> Since Singleton Pattern is about having a private constructor and calling some method to control the instantiations (like some getInstance), in Enums we already have an implicit private constructor.
+
+
+------------
+-----------
