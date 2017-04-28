@@ -255,3 +255,28 @@ So, whenever the enum instance is created here, the same object is reused.
 
 ------------
 -----------
+
+## April 28, 2017
+
+### 1. spell correction in vim
+
+** Turn ON **
+Turn on the spell checking by vim command:
+
+```bash
+:set spell
+```
+
+Once set, it will ask for you confirmation to download the word models. Just hit **yes**.
+
+Once set and downloaded, any incorrect words will be highlighted as you type.
+
+** List available correct words **
+Put the cursor over a misspelled word and just hit the following command:
+
+```bash
+z=
+```
+
+------------
+-----------
