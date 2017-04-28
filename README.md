@@ -260,8 +260,8 @@ So, whenever the enum instance is created here, the same object is reused.
 
 ### 1. spell correction in vim
 
-** Turn ON **
-Turn on the spell checking by vim command:
+#### Turn On Spell checking
+Just hit the vim command:
 
 ```bash
 :set spell
@@ -271,7 +271,7 @@ Once set, it will ask for you confirmation to download the word models. Just hit
 
 Once set and downloaded, any incorrect words will be highlighted as you type.
 
-** List available correct words **
+#### List Available Correct Words
 Put the cursor over a misspelled word and just hit the following command:
 
 ```bash
