@@ -291,8 +291,8 @@ The lines can be joined using the normal mode command.
 ```
 
 Where,  
-**<start>** : starting line number
-**<end>** : ending line number  
+**start** : starting line number
+**end** : ending line number  
 **j** : implies join command
 
 #### Example
