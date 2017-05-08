@@ -280,3 +280,46 @@ z=
 
 ------------
 -----------
+
+## May 08, 2017
+
+### 1. join lines in vim
+The lines can be joined using the normal mode command.
+
+```bash
+:<start>,<end>j
+```
+
+Where,  
+**<start>** : starting line number
+**<end>** : ending line number  
+**j** : implies join command
+
+#### Example
+```bash
+1) Hello there!  
+2) I am Nishan.  
+3) I am Paradox.  
+4) I am nishparadox.  
+```
+
+Join line number (2) and (3), the following command is used:  
+
+```bash
+:2,3j
+```
+It results into:
+
+```bash
+1) Hello there!  
+2) I am Nishan.I am Paradox.  
+3) I am nishparadox.  
+```
+
+------------
+-----------
+
+It results into:
+
+------------
+-----------
