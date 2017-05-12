@@ -4,6 +4,21 @@ A minimal repo for my #TIL stuffs related to programming, technology and anythin
 --------------
 --------------
 
+## May 12, 2017
+
+### 1. enable VI mode in gnome-terminal
+Open the terminal and run the command:
+```bash
+set -o vi
+```
+
+
+### 2. Enable VI mode in terminal automatically when terminal starts
+Open `bashrc` file that is located in home directory i.e. in `~/.bashrc` and put the above command at the end.
+
+--------------
+--------------
+
 ## May 08, 2017
 
 ### 1. join lines in vim
