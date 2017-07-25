@@ -4,6 +4,36 @@ A minimal repo for my #TIL stuffs related to programming, technology and anythin
 --------------
 --------------
 
+## July 25, 2017
+
+### Lookarounds In Regex
+Lookarounds in regex are awesome non-capturing group. It is used to match pattern but not included in the matching list.  
+
+### 1. Lookahead Positive
+Find expression **A** that is followed by expression **B**:  
+```bash
+A(?=B)
+```
+
+### 2. Lookahead Negative 
+Find expression **A** that is followed not by expression **B**:  
+```bash
+A(?!B)
+```
+### 3. Lookbehind Positive 
+Find expression **A** that is preceded by expression **B**:  
+```bash
+(?<=B)A
+```
+### 4. Lookbehind Negative 
+Find expression **A** that is not preceded by expression **B**:  
+```bash
+(?<!B)A
+```
+
+--------------
+--------------
+
 ## May 12, 2017
 
 ### 1. enable VI mode in gnome-terminal
