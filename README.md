@@ -4,6 +4,14 @@ A minimal repo for my #TIL stuffs related to programming, technology and anythin
 --------------
 --------------
 
+## July 29, 2017
+
+### 1. Base64 Encoding == padding
+`Base64` encoded strings have == at the end when the number of encoded bytes is not divisible by 3
+
+--------------
+--------------
+
 ## July 25, 2017
 
 ### Lookarounds In Regex
